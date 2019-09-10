@@ -1,0 +1,15 @@
+@mixin list-li {
+    list-style-type: none;
+
+}
+@mixin button($color,$backround, $border:0) {
+     padding: 13px 48px 13px 48px;
+      color: $color;
+      background: $backround;
+      font-weight: bold;
+      outline: none;
+      border:$border;
+      border-radius: 18px;
+      @content;
+    
+}

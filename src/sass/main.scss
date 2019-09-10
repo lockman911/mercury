@@ -1,0 +1,11 @@
+@import "menu";
+@import "head-title";
+@import 'features';
+body, html,h2{
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    background:url('./img/Graph.png');
+    max-height: 1100px;
+}

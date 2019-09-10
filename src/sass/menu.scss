@@ -1,0 +1,32 @@
+@import './parties/mixins.scss';
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 67px;
+    margin: 0;
+    color: white;
+    padding-left: 70px;
+    padding-right: 120px;
+ &_logo {
+    flex-grow: 2;
+    margin-left: 20px;
+ }
+ &_item {
+    flex:1;
+
+     ul{
+         display: flex;
+         @include list-li();
+         color: #fff;
+         li{
+            list-style: none;
+            cursor: pointer;
+            padding-left: 50px;
+            &:nth-child(1){
+                flex: 2;  
+            }
+         }
+        }
+     }
+ }
